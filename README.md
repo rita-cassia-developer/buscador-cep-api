@@ -2,7 +2,7 @@
 
 Aplicação profissional de localização de endereços em tempo real, focada em performance e experiência do usuário (UX).
 
-Trabalhei nesse projetO simples e muito funcional para comprovar minhas habilidades com **API.**
+Trabalhei nesse projeto simples e muito funcional para comprovar minhas habilidades com **API.**
 
 ---
 
