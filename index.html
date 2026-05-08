@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buscador de Endereço Profissional</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>📍 Localizador de Endereço</h1>
+            <p>Integração em tempo real com API de Correios</p>
+        </header>
+
+        <main>
+            <form id="cep-form">
+                <div class="input-group">
+                    <label for="cep">Digite o CEP</label>
+                    <div class="search-box">
+                        <input type="text" id="cep" placeholder="00000-000" maxlength="9" required>
+                        <button type="submit" id="btn-buscar">Buscar</button>
+                    </div>
+                </div>
+            </form>
+
+            <section id="resultado" class="result-area hidden">
+                <div class="card-endereco">
+                    <h2>Dados Localizados:</h2>
+                    <p><strong>Logradouro:</strong> <span id="rua">...</span></p>
+                    <p><strong>Bairro:</strong> <span id="bairro">...</span></p>
+                    <p><strong>Cidade/UF:</strong> <span id="cidade">...</span></p>
+                    <p><strong>Código IBGE:</strong> <span id="ibge">...</span></p>
+                </div>
+            </section>
+            
+            <div id="loader" class="loader hidden">Buscando...</div>
+            <div id="erro" class="error-msg hidden">CEP não encontrado ou inválido.</div>
+        </main>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
