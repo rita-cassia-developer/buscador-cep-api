@@ -1,6 +1,6 @@
 document.getElementById('cep-form').addEventListener('submit', function(e) {
     e.preventDefault();
-    const cep = document.getElementById('cep').value.replace(/\D/g, ''); // Limpa traços
+    const cep = document.getElementById('cep').value.replace(/\D/g, ''); 
     const loader = document.getElementById('loader');
     const erro = document.getElementById('erro');
     const resultado = document.getElementById('resultado');
@@ -10,12 +10,11 @@ document.getElementById('cep-form').addEventListener('submit', function(e) {
         return;
     }
 
-    // Reset de tela
+   
     erro.classList.add('hidden');
     resultado.classList.add('hidden');
     loader.classList.remove('hidden');
 
-    // Consumindo a API (Fetch)
     fetch(`https://viacep.com.br/ws/${cep}/json/`)
         .then(response => response.json())
         .then(data => {
