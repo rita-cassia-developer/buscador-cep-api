@@ -22,7 +22,7 @@ document.getElementById('cep-form').addEventListener('submit', function(e) {
             if (data.erro) {
                 erro.classList.remove('hidden');
             } else {
-                // Preenche os campos
+                
                 document.getElementById('rua').textContent = data.logradouro;
                 document.getElementById('bairro').textContent = data.bairro;
                 document.getElementById('cidade').textContent = `${data.localidade}/${data.uf}`;
