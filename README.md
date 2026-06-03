@@ -61,7 +61,7 @@ Este projeto foi fundamental para aprofundar conhecimentos em:
 Contribuições são bem-vindas! Sinta-se à vontade para abrir *issues* para reportar bugs ou sugerir novas funcionalidades, ou enviar *pull requests* com melhorias.
 
 
-## 👤 Autor
+## 👤 Autora
 
 **Rita de Cássia Calixto**
 
